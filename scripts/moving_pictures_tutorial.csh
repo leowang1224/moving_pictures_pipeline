@@ -1,3 +1,14 @@
+#!/bin/sh
+#
+###SBATCH --job-name=moving_pictures 
+#SBATCH --time=72:00:00
+#SBATCH --ntasks=5
+#SBATCH --cpus-per-task=1
+#SBATCH --partition=shared
+#load qiime module
+module load qiime2/2018.8
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
 mkdir qiime2-moving-pictures-tutorial
 cd qiime2-moving-pictures-tutorial
 
